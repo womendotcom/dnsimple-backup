@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+bundle install --binstubs=bin/stubs
+
+if [ ! -f .env ]; then
+  cp .env.sample .env
+fi
